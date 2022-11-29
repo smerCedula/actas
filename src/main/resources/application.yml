@@ -1,0 +1,18 @@
+azure:
+  cosmosdb:
+    uri: ${AZURE_COSMOSDB_URI}
+    key: ${AZURE_COSMOSDB_KEY}
+    secondaryKey: ${AZURE_COSMOSDB_SECONDARYKEY}
+    database: ${AZURE_COSMOSDB_DATABASE}
+
+jwt:
+  secret: ${JWT_SECRET}
+
+spring:
+  security:
+    user:
+      name: ${SPRING_SECURITY_USER_NAME}
+      password: ${SPRING_SECURITY_USER_PASSWORD}
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
