@@ -34,7 +34,7 @@ public class PersonaController {
         personaService.delete(person);
     }
 
-    @PostMapping("/{identificadorElectronico}")
+    @GetMapping("/{identificadorElectronico}")
     public ResponseEntity<?> getPerson(@PathVariable String identificadorElectronico){
         List<Persona> p = new ArrayList();
         if(!ObjectUtils.isEmpty(identificadorElectronico))
