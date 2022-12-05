@@ -2,6 +2,7 @@ package com.smer.actas.domain;
 
 import com.azure.spring.data.cosmos.core.mapping.Container;
 import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -24,6 +25,7 @@ public class Persona {
     @JsonProperty("sexo")
     private String sexo;
     @JsonProperty("fecha_nacimiento")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date fechaNacimiento;
     @JsonProperty("lugar_nacimiento")
     private String lugarNacimiento;
@@ -66,6 +68,7 @@ public class Persona {
     @JsonProperty("cadenaActo")
     private String cadenaActo;
     @JsonProperty("fechaRegistro")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date fechaRegistro;
     @JsonProperty("oficialia")
     private String oficialia;
