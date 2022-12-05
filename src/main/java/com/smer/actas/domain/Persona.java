@@ -25,7 +25,7 @@ public class Persona {
     @JsonProperty("sexo")
     private String sexo;
     @JsonProperty("fecha_nacimiento")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date fechaNacimiento;
     @JsonProperty("lugar_nacimiento")
     private String lugarNacimiento;
@@ -68,7 +68,7 @@ public class Persona {
     @JsonProperty("cadenaActo")
     private String cadenaActo;
     @JsonProperty("fechaRegistro")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date fechaRegistro;
     @JsonProperty("oficialia")
     private String oficialia;
