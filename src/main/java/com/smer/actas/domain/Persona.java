@@ -80,5 +80,7 @@ public class Persona {
     private String tomo;
     @JsonProperty("acta")
     private String acta;
+    @JsonProperty("url_acta")
+    private String urlActa;
 
 }
