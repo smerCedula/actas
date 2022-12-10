@@ -8,3 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface PersonaRepository extends CosmosRepository<Persona,String> {
     Iterable<Persona> findByIdentificadorElectronico(String identificadorElectronico);
 }
+
+
