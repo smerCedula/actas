@@ -25,7 +25,7 @@ public class Persona {
     @JsonProperty("sexo")
     private String sexo;
     @JsonProperty("fecha_nacimiento")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd",timezone = JsonFormat.DEFAULT_TIMEZONE)
     private Date fechaNacimiento;
     @JsonProperty("lugar_nacimiento")
     private String lugarNacimiento;
